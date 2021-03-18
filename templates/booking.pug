@@ -1,0 +1,19 @@
+extends 'base.pug'
+-load static compress
+
+block extra_head
+  script(src="https://cdn.jsdelivr.net/npm/@braid/vue-formulate@2.5.2/dist/formulate.min.js")
+
+block title
+  | Buchung
+
+block content
+  .container
+    #booking-form
+      h1 Buchung
+      form(action="" method="POST")
+        | {% csrf_token %}
+        ul#form {{ form.as_ul }}
+        .submit
+          button(type="submit") Buchung anfragen
+

@@ -328,6 +328,17 @@ prevent-XSS = ["bleach"]
 test = ["tox (>=2.3)"]
 
 [[package]]
+name = "django-quill-editor"
+version = "0.1.21"
+description = "Integrate Quill editor with Django project."
+category = "main"
+optional = false
+python-versions = ">3.5"
+
+[package.dependencies]
+django = ">3"
+
+[[package]]
 name = "django-secrets"
 version = "1.0.2"
 description = "The easy way of handling Django secrets."
@@ -930,7 +941,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "ef65d6d7122a7285870ec4bfdb5ff3b61baf330191bda34eca3047e14dba6f11"
+content-hash = "edaeade60425f769e131b9e3beff785280fa917f06616a7cfecea20be6e2dda8"
 
 [metadata.files]
 appdirs = [
@@ -1091,6 +1102,10 @@ django-livereload-server = [
 ]
 django-post-office = [
     {file = "django-post_office-3.5.3.tar.gz", hash = "sha256:1454823691e7f323768e1e19f018590ca47890681ac72e5eee9cbac838ee04df"},
+]
+django-quill-editor = [
+    {file = "django-quill-editor-0.1.21.tar.gz", hash = "sha256:8727845db851ca2f6ea5393405b7bad4fe8c264e84fafbed059d5d7d13bc85ce"},
+    {file = "django_quill_editor-0.1.21-py3-none-any.whl", hash = "sha256:89afcb8639b581a320266d83ce859ec40803617e2aefe8bc942214856470548a"},
 ]
 django-secrets = [
     {file = "django_secrets-1.0.2-py2.py3-none-any.whl", hash = "sha256:33fc09493654744171b6d8e7fff211d8d4df0036d0a3670921648fcfb8c0225c"},

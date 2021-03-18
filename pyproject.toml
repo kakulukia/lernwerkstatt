@@ -29,6 +29,7 @@ pendulum = "^2.0.5"
 Pillow = "^8.1.2"
 libsass = "^0.20.1"
 python = "^3.9"
+django-quill-editor = "^0.1.21"
 
 [tool.poetry.dev-dependencies]
 black = "^19.10b0"

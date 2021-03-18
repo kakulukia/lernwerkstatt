@@ -1,5 +1,6 @@
 from django.apps import AppConfig
 
 
-class TestereiConfig(AppConfig):
+class BookingsConfig(AppConfig):
     name = "bookings"
+    verbose_name = 'Lernwerstatt'

@@ -10,7 +10,9 @@ html(lang='de')
     title
       block title
         | Lernwerstatt
-    link(href="https://fonts.googleapis.com/css?family=Barrio", rel="stylesheet")
+    link(rel="preconnect" href="https://fonts.gstatic.com")
+    link(href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet")
+
     link(rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css")
     link(rel="stylesheet" href="//cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css")
     script(src="/static/js/imageMapResizer.min.js")
@@ -18,14 +20,18 @@ html(lang='de')
     -compress css
       link(rel='stylesheet', type='text/x-sass', href='{% static "sass/styles.sass" %}')
 
+    block extra_head
+
 body
   #app
     header
       block header
         .container.section
-          img.logo(src="/static/img/lernwerkstatt_logo.png")
+          a(href="/")
+            img.logo(src="/static/img/lernwerkstatt_logo.png")
     main
-      block content
+      .container.section
+        block content
     footer
       block footer
         .container.section
@@ -47,4 +53,11 @@ body
     imageMapResize();
 
   -compress js
-     block extra_js
+    block extra_js
+      script.
+        let app = new Vue({
+            el: '#app',
+            data: {},
+            methods: {},
+            created () {}
+        });

@@ -21,6 +21,7 @@ INSTALLED_APPS = [
     # our own stuff
     "users",
     "bookings",
+
     # Django
     "django.contrib.admin",
     "django.contrib.auth",
@@ -29,9 +30,11 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.sites",
     "django.contrib.staticfiles",
+
     # 3rd party apps
     "axes",
     "compressor",
+    'django_quill',
     "django_extensions",
     "django_secrets",
     "post_office",

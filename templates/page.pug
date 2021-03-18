@@ -1,0 +1,8 @@
+extends 'base.pug'
+-load static compress
+
+block title
+  | {{ page.name }}
+
+block content
+  | {{ page.text.html|safe }}
